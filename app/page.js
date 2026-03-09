@@ -8,27 +8,27 @@ export default function Home() {
           {/* header section fr nav bar, logo, website header, and BC flag */}
 
 
-          <div class="header-section">
-            <div class="header-content">
+          <div className="header-section">
+            <div className="header-content">
 
 
 
 
-              <div class="bcFlag"></div>
+              <div className="bcFlag"></div>
 
 
 
-              <div class="hydro-ed-banner">
+              <div className="hydro-ed-banner">
 
-                <div class="hydro-ed-logo"></div>
+                <div className="hydro-ed-logo"></div>
 
-                <div class="hydro-ed-title"> <h1>HYDRO-ED</h1></div>
+                <div className="hydro-ed-title"> <h1>HYDRO-ED</h1></div>
 
               </div>
 
 
 
-              <nav class="nav-bar">
+              <nav className="nav-bar">
 
                 <a href="#game">Game</a>
                 <a href="#instructions"></a>
@@ -45,6 +45,17 @@ export default function Home() {
 
           {/* header section fr nav bar, logo, website header, and BC flag */}
 
+          welcome image below header
+
+          <div className="welcome">
+
+
+            <div className="dam-image">
+
+              <img src="Harold_Kumar_Dynamic_Content_HydroElectricity/public/images/welcome-image.png" alt="welcome-image"></img>
+            </div>
+          </div>
+
 
 
 
@@ -54,9 +65,9 @@ export default function Home() {
 
           {/* section for the interactive game  */}
 
-          <div class="Game">
+          <div className="Game">
 
-            <div class="Game-header-section">
+            <div className="Game-header-section">
 
               <div id="game-header"> <h2>GAME</h2>
               
@@ -67,11 +78,11 @@ export default function Home() {
 
 
 
-            <div class="Game-interactive-section">
+            <div className="Game-interactive-section">
 
-              <div class="Game-content">
+              <div className="Game-content">
 
-                <button class="turn-on-water">
+                <button className="turn-on-water">
 
                   <h2>TURN ON WATER</h2>
 
@@ -96,9 +107,9 @@ export default function Home() {
 
           {/* instructions section  */}
 
-          <div class="instructions-section">
+          <div className="instructions-section">
             
-            <div class="instructions-header">
+            <div className="instructions-header">
 
               <div id="instructions-title">
 
@@ -109,9 +120,9 @@ export default function Home() {
             </div>
             
 
-            <div class="instructions-content">
+            <div className="instructions-content">
 
-              <div class="instructions-text">
+              <div className="instructions-text">
 
                 <p>Press the green button to turn on the water.</p>
 
@@ -124,7 +135,7 @@ export default function Home() {
               </div>
 
 
-              <div class="instructions-image">
+              <div className="instructions-image">
 
                 <img></img>
 
@@ -135,7 +146,7 @@ export default function Home() {
 
 
           </div>
-          
+
           {/* instructions section  */}
 
 
@@ -144,23 +155,23 @@ export default function Home() {
 
           {/* education section  */}
 
-          <div class="education-section">
+          <div className="education-section">
 
 
 
-            <div class="education-header">
+            <div className="education-header">
 
               <h2>EDUCATION</h2>
             </div>
 
 
 
-            <div class="education-visuals">
+            <div className="education-visuals">
 
-              <div class="bc-hydro-logo"></div>
+              <div className="bc-hydro-logo"></div>
 
 
-              <div class="education-images">
+              <div className="education-images">
 
                 <img></img>
                 <img></img>
@@ -172,9 +183,9 @@ export default function Home() {
             </div>
 
 
-            <div class="education-content">
+            <div className="education-content">
 
-              <div class="fun-facts">
+              <div className="fun-facts">
 
                 <p></p>
                 <p></p>
@@ -208,9 +219,9 @@ export default function Home() {
 
             {/* about us section */}
 
-          <div class="about-us">
+          <div className="about-us">
 
-            <div class="about-header">
+            <div className="about-header">
 
               <div id="about-us-title"> 
                 
@@ -222,13 +233,13 @@ export default function Home() {
             </div>
 
 
-            <div class="about-us-content">
+            <div className="about-us-content">
 
 
 
-              <div class="about-us-bio">
+              <div className="about-us-bio">
 
-                <div class="bio-images">
+                <div className="bio-images">
 
                   <img id="gurjot"></img>
 
@@ -237,7 +248,7 @@ export default function Home() {
                 </div>
 
 
-                <div class="who-we-are">
+                <div className="who-we-are">
 
                   <div id="gurjot-bio">
 
@@ -259,18 +270,18 @@ export default function Home() {
 
 
 
-              <div class="additional-info">
+              <div className="additional-info">
 
 
 
-                <div class="purpose">
+                <div className="purpose">
 
                   <p></p>
                 </div>
 
 
 
-                <div class="ambitions">
+                <div className="ambitions">
 
                   <p></p>
 
