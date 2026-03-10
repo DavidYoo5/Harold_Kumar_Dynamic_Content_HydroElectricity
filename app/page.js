@@ -227,17 +227,6 @@ export default function Home() {
 
           {/* education section  */}
 
-
-
-
-
-
-
-
-
-
-
-
             {/* about us section */}
 
           <div className={styles.aboutUs}>
@@ -284,7 +273,7 @@ export default function Home() {
 
                           <div className={styles.gurjotBio}>
 
-                               <p>Hello, my name is Gurjot Hundal, I am 23 years old, and currently studying in the D3 (Digital Design and Development) program at BCIT. Through this program i have learned so much about the skill it takes to develop for digital platforms. Especially applications and websites such as this one, where we are finally taking our technical skills learned so far and applying it to real projects. One’s that we can add to our portfolio in the future and also use to build our careers. This project is just the beginning of what we are capable of and can’t wait to continue learning and working on bigger projects!     </p>
+                               <p>Hello, my name is Gurjot Hundal, I am 23-years-old, and currently studying in the D3 (Digital Design and Development) program at BCIT. Through this program i have learned so much about the skill it takes to develop for digital platforms. Especially applications and websites such as this one, where we are finally taking our technical skills learned so far and applying it to real projects. One’s that we can add to our portfolio in the future and also use to build our careers. This project is just the beginning of what we are capable of and can’t wait to continue learning and working on bigger projects!     </p>
                   
                           </div>
 
@@ -336,14 +325,6 @@ export default function Home() {
 
           {/* about us section */}
 
-
-
-
-
-
-
-
-     
     </div>
   );
 }

@@ -293,6 +293,7 @@ width: 100%;
   width: 100%;
 }
 
+/*About us title*/
 #aboutUsTitle{
  color: gray;
   font-size: 40px;
@@ -310,6 +311,8 @@ width: 100%;
   flex-direction: row;
   align-items: center;
 }
+
+/*About us content*/
 
 .aboutUsContentBox{
   height: 820px;
@@ -341,7 +344,7 @@ width: 100%;
   justify-content: center;
 }
 
-
+/*About us images and text*/
 .bioImages{
   width: 100%;
   height: 40%;
