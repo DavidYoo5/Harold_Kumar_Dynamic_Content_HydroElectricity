@@ -8,32 +8,36 @@ export default function Home() {
           {/* header section fr nav bar, logo, website header, and BC flag */}
 
 
-          <div className="header-section">
-            <div className="header-content">
+          <div className={styles.headerSection}>
+            <div className={styles.headerContent}>
 
 
 
+              <div className={styles.bcFlag}>
+                <Image src="/images/bc flag.png" alt="BC Flag" width={74} height={42}/>
+              </div>
+          
 
-              <div className="bcFlag"></div>
 
 
+              <div className={styles.hydroEdBanner}>
 
-              <div className="hydro-ed-banner">
+                <div className={styles.hydroEdLogo}>
+                  <Image src="/images/hydro-ed-logo.png" alt="Hydro-Ed Logo" width={131} height={81}/>
+                </div>
 
-                <div className="hydro-ed-logo"></div>
-
-                <div className="hydro-ed-title"> <h1>HYDRO-ED</h1></div>
+                <div className={styles.hydroEdTitle}> <h1>HYDRO-ED</h1></div>
 
               </div>
 
 
 
-              <nav className="nav-bar">
+              <nav className={styles.navBar}>
 
-                <a href="#game">Game</a>
-                <a href="#instructions"></a>
-                <a href="#education"></a>
-                <a href="#about-us">About Us</a>
+                <a href="#game">GAME</a>
+                <a href="#instructions">INSTRUCTION</a>
+                <a href="#education">EDUCATION</a>
+                <a href="#about-us">ABOUT US</a>
 
               </nav>
 
@@ -45,14 +49,14 @@ export default function Home() {
 
           {/* header section fr nav bar, logo, website header, and BC flag */}
 
-          welcome image below header
+          {/* welcome image below header */}
 
-          <div className="welcome">
+          <div className={styles.welcomeSection}>
 
 
-            <div className="dam-image">
+            <div className={styles.damImage}>
 
-              <img src="Harold_Kumar_Dynamic_Content_HydroElectricity/public/images/welcome-image.png" alt="welcome-image"></img>
+              <Image src="/images/welcome-image.png" alt="Welcome" width={1728} height={300}/>
             </div>
           </div>
 
@@ -65,11 +69,11 @@ export default function Home() {
 
           {/* section for the interactive game  */}
 
-          <div className="Game">
+          <div className={styles.gameSection}>
 
-            <div className="Game-header-section">
+            <div className={styles.gameHeaderSection}>
 
-              <div id="game-header"> <h2>GAME</h2>
+              <div className={styles.gameHeader}> <h2>GAME</h2>
               
               </div>
 
@@ -78,18 +82,17 @@ export default function Home() {
 
 
 
-            <div className="Game-interactive-section">
+            <div className={styles.gameContentSection}>
 
-              <div className="Game-content">
+              <div className={styles.waterWheel}> </div>
 
-                <button className="turn-on-water">
 
-                  <h2>TURN ON WATER</h2>
+
+                <button className={styles.waterButton}>
+
+                  TURN ON WATER
 
                 </button>
-
-              </div>
-
 
             </div>
 
@@ -107,11 +110,11 @@ export default function Home() {
 
           {/* instructions section  */}
 
-          <div className="instructions-section">
+          <div className={styles.instructionsSection}>
             
-            <div className="instructions-header">
+            <div className={styles.instructionsHeader}>
 
-              <div id="instructions-title">
+              <div className={styles.instructionsTitle}>
 
                 <h2>INSTRUCTIONS</h2>
 
@@ -120,24 +123,24 @@ export default function Home() {
             </div>
             
 
-            <div className="instructions-content">
+            <div className={styles.instructionsContent}>
 
-              <div className="instructions-text">
+              <div className={styles.instructionsText}>
 
-                <p>Press the green button to turn on the water.</p>
+                <p>1. Press the green button to turn on the water.</p>
 
-                <p>As water wheel begins to turn the generator to generate energy, Press the generator.</p>
+                <p>2. As water wheel begins to turn the generator to generate energy, Press the generator.</p>
 
-                <p>As energy generates from the turning of the waterwheel, Press the transformer to convert the energy to volts.</p>
+                <p>3. As energy generates from the turning of the waterwheel, Press the transformer to convert the energy to volts.</p>
 
-                <p>As volts reaches the meter, Press the meter to track and distribute the electricity to consumers from the power grid.</p>
+                <p>4. As volts reaches the meter, Press the meter to track and distribute the electricity to consumers from the power grid.</p>
 
               </div>
 
 
-              <div className="instructions-image">
+              <div className={styles.instructionsImage}>
 
-                <img></img>
+                <img src="/images/dam-4k.png" alt="Dam" />
 
               </div>
 
@@ -233,7 +236,7 @@ export default function Home() {
 
             <div className={styles.aboutUsHeader}>
 
-                <h1 id={styles.aboutUsTitle}>ABOUT US</h1>
+                <h2 id={styles.aboutUsTitle}>ABOUT US</h2>
 
             </div>
 
