@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import TurnOnWaterButton from "./components/turnOnWaterButton";
 import WaterWheel from "./components/waterwheel";
+import Transformer from "./components/transformer";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -98,6 +99,10 @@ const [isWaterOn, setIsWaterOn] = useState(false);
             </div>
 
             <div className={styles.gameContentSection}>
+              
+<div className="generatorTransoformerMeter">
+    <Transformer />
+</div>
 
     <div>
       <div className="waterWheelAndWaterFall"

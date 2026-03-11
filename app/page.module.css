@@ -272,7 +272,9 @@ body {
 
 /* game container */
 
-.gameContentSection {
+.gameContentSection 
+{display: flex;
+  justify-content: flex-end;
   position: relative;
   height: 500px;
   margin-top: 8px;
