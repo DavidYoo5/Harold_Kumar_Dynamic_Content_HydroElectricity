@@ -287,8 +287,10 @@ body {
   position: absolute;
   right: 28px;
   top: 30px;
-  width: 150px;
-  height: 150px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 /* green button */
