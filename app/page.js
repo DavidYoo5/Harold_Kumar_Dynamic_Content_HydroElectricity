@@ -1,7 +1,18 @@
+"use client";
+
+import { useState } from "react";
+import WaterFall from "./components/waterFall";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const [waterOn, setWaterOn] = useState(false);
+
+  const turnWaterOn = () => {
+    setWaterOn(true);
+};
+
   return (
     <div className={styles.page}>
 
@@ -82,19 +93,20 @@ export default function Home() {
 
 
 
-            <div className={styles.gameContentSection}>
+        <div className={styles.gameContentSection}>
+          <div style={{ position: "relative" }}>
+            <WaterFall waterOn={waterOn} />
+          </div>
 
-              <div className={styles.waterWheel}> </div>
+          <div className={styles.waterWheel}></div>
 
-
-
-                <button className={styles.waterButton}>
-
-                  TURN ON WATER
-
-                </button>
-
-            </div>
+          <button
+            className={styles.waterButton}
+            onClick={turnWaterOn}
+          >
+            TURN ON WATER
+          </button>
+        </div>
 
           </div>
 
