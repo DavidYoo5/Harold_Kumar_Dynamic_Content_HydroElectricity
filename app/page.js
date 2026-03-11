@@ -1,4 +1,6 @@
 "use client";
+
+import WaterFall from "./components/waterFall";
 import Image from "next/image";
 import styles from "./page.module.css";
 import TurnOnWaterButton from "./components/turnOnWaterButton";
@@ -6,6 +8,12 @@ import WaterWheel from "./components/waterwheel";
 import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [waterOn, setWaterOn] = useState(false);
+
+  const turnWaterOn = () => {
+    setWaterOn(true);
+};
+
 const [isWaterOn, setIsWaterOn] = useState(false);
 
 
@@ -91,18 +99,30 @@ const [isWaterOn, setIsWaterOn] = useState(false);
 
             <div className={styles.gameContentSection}>
 
-              <div className={styles.waterWheel}> 
-                <WaterWheel isWaterOn={isWaterOn} />  
-              </div>
+    <div>
+      <div className="waterWheelAndWaterFall"
+      style={{
+      height: "100%",
+      width: "100%",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "flex-end",
+      }}>
+      <div style={{
+        height: "fit-content",
+        width: "fit-content",    
+        marginRight: "135px",  
+      }}>
+      <WaterWheel isWaterOn={isWaterOn}/>
+      </div>
+      <div>
+      <WaterFall waterOn={isWaterOn}/>
+      </div>
+      </div>
+      <TurnOnWaterButton isWaterOn={isWaterOn} setIsWaterOn={setIsWaterOn} />
+    </div>
 
-                
-                <TurnOnWaterButton isWaterOn={isWaterOn} setIsWaterOn={setIsWaterOn}/>
-
-                {/* <button className={styles.waterButton}>
-
-                  TURN ON WATER
-
-                </button> */}
+            
 
             </div>
 
@@ -193,7 +213,7 @@ const [isWaterOn, setIsWaterOn] = useState(false);
                 
                 <div className={styles.educationImagesRow}>
                 <Image src="/images/education-image-1.png" alt="Hydro Electricity Diagram" width={180} height={116} className={styles.educationImage} />
-                <Image src="/images/education-image-2.png" alt="Hydro Electricity Diagram" width={180} height={116} className={styles.educationImage} />
+                <Image src="/images/education-image-12.png" alt="Hydro Electricity Diagram" width={180} height={116} className={styles.educationImage} />
                 </div>
 
               </div>
