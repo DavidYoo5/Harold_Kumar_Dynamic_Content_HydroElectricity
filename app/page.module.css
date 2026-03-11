@@ -1,4 +1,4 @@
-.page {
+/*.page {
   --background: #fafafa;
   --foreground: #fff;
 
@@ -94,7 +94,7 @@ a.secondary {
 }
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/*@media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
@@ -138,4 +138,529 @@ a.secondary {
     --button-secondary-hover: #1a1a1a;
     --button-secondary-border: #1a1a1a;
   }
+}
+*/
+
+
+  .headerSection {
+    height: auto;
+    padding: 10px 12px 14px;
+  }
+
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+  color: #222;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/*  HEADER SECTION  */
+
+.headerSection {
+  background-color: #005f73;
+  padding: 10px 12px;
+  height: 150px;
+  position: relative;
+}
+
+/* container for nav positioning */
+.headerContent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+  gap: 5px;
+}
+
+/*  BC FLAG  */
+
+.bcFlag {
+
+
+  position: absolute;
+  left: 12px;
+  top: 55px;
+}
+
+/*  CENTERED HYDRO BANNER  */
+
+.hydroEdBanner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2px;
+}
+
+/*  HYDRO EDLOGO  */
+
+.hydroEdLogo {
+  margin-bottom: 4px;
+}
+
+/*  TITLE  */
+
+.hydroEdTitle h1 {
+  margin: 0;
+  color: white;
+  font-size: 41px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/*  NAVIGATION  */
+
+.navBar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  margin-bottom: 8px;
+}
+
+.navBar a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+/* welcome section */
+
+.welcomeSection {
+  background-color: #d9d9d9;
+}
+
+.damImage {
+  width: 100%;
+}
+
+.damImage :global(img) {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* GAME SECTION */
+
+.gameSection {
+  background-color: #FFFFFF;
+  padding-bottom: 14px;
+}
+
+.gameHeaderSection {
+  padding: 10px 12px 0;
+}
+
+.gameHeader h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 300;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+}
+
+/* game container */
+
+.gameContentSection {
+  position: relative;
+  height: 500px;
+  margin-top: 8px;
+  background-color: #d9edf2;
+  overflow: hidden;
+  padding: 18px;
+}
+
+/* empty placeholder for future wheel */
+
+.waterWheel {
+  position: absolute;
+  right: 28px;
+  top: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+/* green button */
+
+.waterButton {
+  position: absolute;
+  left: 30px;
+  bottom: 18px;
+  width: 200px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 26px;
+  background-color: #63ef00;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+
+
+
+/* instructions section */
+
+.instructionsSection {
+  background-color: #FFFFFF;
+  padding: 10px 12px 16px;
+}
+
+.instructionsHeader {
+  margin-bottom: 10px;
+}
+
+.instructionsTitle h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+}
+
+/* layout */
+
+.instructionsContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items: stretch;
+}
+
+/* text box */
+
+.instructionsText {
+  background-color: #e3e3e3;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+}
+
+.instructionsText p {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  overflow: hidden;
+  margin: 20px ;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
+
+/* image */
+
+.instructionsImage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/*Education Section*/
+.educationSection {
+background-color: #DAF7FF  ;
+height: 580px;
+width: 100%;
+}
+/*Education Title*/
+.educationHeader{
+   background-color: #FFFFFF;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#educationTitle{
+    margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+/*Education BC Hydro Logo*/
+.bcHydroLogoPicture{
+width: fit-content;
+height: fit-content;
+padding: 0px;
+margin: 0px;
+
+}
+/*Education Images*/
+
+.educationVisuals{
+  padding: 0px;
+  margin: 0px;
+
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.educationImages{
+
+  padding: 0px;
+  margin: 0px;
+
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.educationImage3{
+  width: fit-content;
+  height: fit-content;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.educationImagesRow{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+  width: fit-content;
+}
+/*Education Text*/
+
+.funFactsTextBox{
+  padding: 0px;
+  margin: 0px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.bcHydroTextBox{
+  padding: 0px;
+  margin: 0px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.funFactsList{
+font-size: 10pt;
+   width: 700px;
+  height: 100px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.bcHydroList{
+font-size: 10pt;
+ width: 700px;
+  height: 160px;
+  color: gray;
+}
+
+.educationContentText{
+  height: fit-content;
+  width: fit-content;
+}
+
+
+/*Education Images and Text Container*/
+.educationImagesAndText{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+
+@media screen and (max-width: 1720px) {
+  .educationImagesAndText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    gap: 50px;
+  }
+
+.educationSection {
+background-color: #DAF7FF  ;
+height: 980px;
+width: 100%;
+}
+
+}
+
+
+/*About us section*/
+
+.aboutUs{
+  background-color: #085B6B;
+  height: 100%;
+  width: 100%;
+}
+
+/*About us title*/
+#aboutUsTitle{
+     margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+.aboutUsHeader{
+  background-color: #FFFFFF;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*About us content*/
+
+.aboutUsContentBox{
+  height: 820px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUsContent{
+  height: 100%;
+  width: 50%;
+  margin-left: 300px;
+  margin-right: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.aboutUsBio{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*About us images and text*/
+.bioImages{
+  width: 100%;
+  height: 40%;
+  }
+
+.whoWeAreText{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bioImages{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.bioImageGurjot{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bioImageDavid{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whoWeAreHeader{
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 40px;
+  font-size: 25px;
+  color: white;
+
+}
+
+.whoWeAreContent{
+
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.gurjotBio{
+
+  width: 350px;
+  height: 300px;
+  color: white;
+  font-size: 12pt;
+}
+
+.davidBio{
+  width: 350px;
+  height: 300px;
+  color: white;
+  font-size: 12pt;
+}
+
+.bioImageName{
+  font-size: 30px;
+  color: white;
+  margin-bottom: 15px;
 }
