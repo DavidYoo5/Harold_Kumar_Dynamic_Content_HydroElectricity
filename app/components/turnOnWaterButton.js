@@ -1,7 +1,10 @@
 "use client";
 
+import Image from "next/image";
+
 export default function TurnOnWaterButton({ isWaterOn, setIsWaterOn }) {
   return (
+    <div>
     <button
       onClick={() => setIsWaterOn(!isWaterOn)}
       style={{
@@ -21,5 +24,23 @@ export default function TurnOnWaterButton({ isWaterOn, setIsWaterOn }) {
     >
       {isWaterOn ? "Turn off water" : "Turn on water"}
     </button>
+
+<Image src="/images/WaterWheelDescription.svg"
+    alt="WaterWheelDescription"
+    width={200}
+    height={100}
+    style={{
+      marginBottom: "-70px",
+      marginLeft: "800px",
+      position: "absolute", 
+      right: "180px", 
+      bottom: "90px",
+      opacity: isWaterOn ? 1 : 0,
+      transform: isWaterOn ? "translateY(0px) scale(1)" : "translateY(20px) scale(0)",
+      transition: "transform 0.5s ease, opacity 0.5s ease",
+      zIndex: 1,
+    }}
+     />
+    </div>
   );
 }

@@ -15,7 +15,7 @@ export default function Transformer() {
 
   return (
     <div>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", }}>
 
         <Image
           src="/images/Transformer Bar.svg"
@@ -37,9 +37,10 @@ export default function Transformer() {
              color: "white",
         fontSize: "17px",
         fontWeight: "700",
+        zIndex: 1,
           }}
         >
-{isClicked ? "TurnTransoformer off" : "Turn Transformer on"}
+{isClicked ? "Turn Transformer off" : "Turn Transformer on"}
         </button>
 
 <div>
@@ -48,7 +49,6 @@ export default function Transformer() {
           alt="Meter"
           width={70}
           height={70}
-          style={{backgroundColor: "green"}}
         />
 
 <div>
@@ -69,6 +69,21 @@ export default function Transformer() {
           }}
 />
 </div>
+
+<Image src="/images/TransformerDescription.svg"
+    alt="TransformerDescription"
+    width={200}
+    height={100}
+    style={{
+      position: "absolute", 
+      right: "220px",
+      top: "40px", 
+      opacity: isClicked ? 1 : 0,
+      transform: isClicked ? "translateY(0px) scale(1)" : "translateY(20px) scale(0)",
+      transition: "transform 0.5s ease, opacity 0.5s ease",
+      zIndex: 1,
+    }}
+     />
 
 </div>
       </div>

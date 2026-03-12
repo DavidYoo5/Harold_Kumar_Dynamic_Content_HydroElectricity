@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function WaterFall({ waterOn }) {
+export default function WaterFall({ isWaterOn }) {
   return (
     <div
       style={{
@@ -43,8 +43,8 @@ export default function WaterFall({ waterOn }) {
           right: "50px",    
           width: "90px",
           height: "422px",  
-          opacity: waterOn ? 1 : 0,
-          transform: waterOn ? "scaleY(1)" : "scaleY(0)",
+          opacity: isWaterOn ? 1 : 0,
+          transform: isWaterOn ? "scaleY(1)" : "scaleY(0)",
           transformOrigin: "top",
           transition: "transform 0.8s ease, opacity 0.2s ease",
           zIndex: 1,

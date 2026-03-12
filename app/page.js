@@ -6,16 +6,16 @@ import styles from "./page.module.css";
 import TurnOnWaterButton from "./components/turnOnWaterButton";
 import WaterWheel from "./components/waterwheel";
 import Transformer from "./components/transformer";
+import Meter from "./components/meter";
+import Wires from "./components/elecwires";
+
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [waterOn, setWaterOn] = useState(false);
-
-  const turnWaterOn = () => {
-    setWaterOn(true);
-};
 
 const [isWaterOn, setIsWaterOn] = useState(false);
+  const [isTransformerOn, setIsTransformerOn] = useState(false);
+  const [isMeterOn, setIsMeterOn] = useState(false); 
 
 
 
@@ -33,7 +33,7 @@ const [isWaterOn, setIsWaterOn] = useState(false);
               <div className={styles.bcFlag}>
                 <Image src="/images/bc flag.png" alt="BC Flag" width={74} height={42}/>
               </div>
-          
+    
 
 
 
@@ -101,7 +101,9 @@ const [isWaterOn, setIsWaterOn] = useState(false);
             <div className={styles.gameContentSection}>
               
 <div className="generatorTransoformerMeter">
-    <Transformer />
+    <Wires isMeterOn={isMeterOn}/>
+    <Transformer isWaterOn={isWaterOn} isTransformerOn={isTransformerOn} setIsTransformerOn={setIsTransformerOn}/>
+    <Meter isClicked={isMeterOn} handleClick={setIsMeterOn}/>
 </div>
 
     <div>
@@ -120,11 +122,13 @@ const [isWaterOn, setIsWaterOn] = useState(false);
       }}>
       <WaterWheel isWaterOn={isWaterOn}/>
       </div>
+
       <div>
-      <WaterFall waterOn={isWaterOn}/>
+      <WaterFall isWaterOn={isWaterOn}/>
       </div>
+
       </div>
-      <TurnOnWaterButton isWaterOn={isWaterOn} setIsWaterOn={setIsWaterOn} />
+      <TurnOnWaterButton isWaterOn={isWaterOn} setIsWaterOn={setIsWaterOn}/>
     </div>
 
             
