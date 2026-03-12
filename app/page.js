@@ -6,6 +6,8 @@ import styles from "./page.module.css";
 import TurnOnWaterButton from "./components/turnOnWaterButton";
 import WaterWheel from "./components/waterwheel";
 import Transformer from "./components/transformer";
+import Generator from "./components/generator";
+import LightBulbs from "./components/lightBulbs";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -101,8 +103,11 @@ const [isWaterOn, setIsWaterOn] = useState(false);
             <div className={styles.gameContentSection}>
               
 <div className="generatorTransoformerMeter">
+    <Generator />
     <Transformer />
+    <LightBulbs />
 </div>
+
 
     <div>
       <div className="waterWheelAndWaterFall"
