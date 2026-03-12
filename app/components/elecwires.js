@@ -15,8 +15,8 @@ export default function Wires({isMeterOn}) {
             style={{
                 position: "absolute",
                 zIndex: 0,
-                right: "400px",
-                bottom: "220px",
+                right: "415px",
+                top: "-10px",
             }}/>
 
 
@@ -27,8 +27,8 @@ export default function Wires({isMeterOn}) {
         height={20}
         style={{
           position: "absolute",
-          top: "230px",
-          right: "525px",
+          top: "340px",
+          right: "540px",
           zIndex: 2,
           opacity: isMeterOn ? 1 : 0,
           animation: isMeterOn ? "circleFlow 2s linear infinite" : "none",
@@ -49,7 +49,7 @@ export default function Wires({isMeterOn}) {
             transform: translate(-130px, 40px); 
           }
           100% {
-            transform: translate(-130px, -280px);
+            transform: translate(-130px, -380px);
             scale: 1;
           }
         }

@@ -15,13 +15,13 @@ export default function Transformer() {
 
   return (
     <div>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "-20px"}}>
 
         <Image
           src="/images/Transformer Bar.svg"
           alt="Transformer Bar"
-          width={200}
-          height={60}
+          width={100}
+          height={50}
         />
 
         <button
@@ -72,12 +72,12 @@ export default function Transformer() {
 
 <Image src="/images/TransformerDescription.svg"
     alt="TransformerDescription"
-    width={200}
-    height={100}
+    width={300}
+    height={150}
     style={{
       position: "absolute", 
-      right: "220px",
-      top: "40px", 
+      right: "700px",
+      top: "170px", 
       opacity: isClicked ? 1 : 0,
       transform: isClicked ? "translateY(0px) scale(1)" : "translateY(20px) scale(0)",
       transition: "transform 0.5s ease, opacity 0.5s ease",

@@ -6,6 +6,8 @@ import styles from "./page.module.css";
 import TurnOnWaterButton from "./components/turnOnWaterButton";
 import WaterWheel from "./components/waterwheel";
 import Transformer from "./components/transformer";
+import Generator from "./components/generator";
+import LightBulbs from "./components/lightBulbs";
 import Meter from "./components/meter";
 import Wires from "./components/elecwires";
 
@@ -99,12 +101,19 @@ const [isWaterOn, setIsWaterOn] = useState(false);
             </div>
 
             <div className={styles.gameContentSection}>
-              
-<div className="generatorTransoformerMeter">
-    <Wires isMeterOn={isMeterOn}/>
+              <LightBulbs />
+           <Wires isMeterOn={isMeterOn}/>   
+
+
+<div className="generatorTransoformerMeter" style={{display: "flex",
+  flexDirection:"column",
+  alignItems: "center",
+}}>
+    <Generator/>
     <Transformer isWaterOn={isWaterOn} isTransformerOn={isTransformerOn} setIsTransformerOn={setIsTransformerOn}/>
     <Meter isClicked={isMeterOn} handleClick={setIsMeterOn}/>
 </div>
+
 
     <div>
       <div className="waterWheelAndWaterFall"
@@ -174,6 +183,7 @@ const [isWaterOn, setIsWaterOn] = useState(false);
 
                 <p>4. As volts reaches the meter, Press the meter to track and distribute the electricity to consumers from the power grid.</p>
 
+                <p>5. As electricity reaches the power grid, Press the lighning bolt to turn the lights on.</p>  
               </div>
 
 

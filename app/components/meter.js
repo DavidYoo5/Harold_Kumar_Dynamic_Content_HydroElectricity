@@ -37,14 +37,14 @@ export default function Meter({isClicked, handleClick}) {
 
 <Image src="/images/MeterDescription.svg"
     alt="TransformerDescription"
-    width={200}
-    height={100}
+    width={300}
+    height={150}
     style={{
       marginBottom: "-70px",
       marginLeft: "800px",
       position: "absolute",
-        right: "600px",
-        bottom: "310px",
+        right: "700px",
+        bottom: "100px",
       opacity: isClicked ? 1 : 0,
       transform: isClicked ? "translateY(0px) scale(1)" : "translateY(20px) scale(0)",
       transition: "transform 0.5s ease, opacity 0.5s ease",
