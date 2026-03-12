@@ -95,11 +95,7 @@ export default function Generator({ }) {
                             fill
                             style={{ 
                             objectFit: "contain",
-                            // marginBottom: "-70px",
-                            // marginLeft: "800px",
                             position: "absolute",
-                            // right: "600px",
-                            // bottom: "310px",
                             opacity: showInfo ? 1 : 0,
                             transform: showInfo ? "translateY(0px) scale(1)" : "translateY(20px) scale(0)",
                             transition: "transform 0.5s ease, opacity 0.5s ease",
